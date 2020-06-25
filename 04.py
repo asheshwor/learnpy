@@ -74,3 +74,19 @@ def product(numbers):
   return total
 
 product([1,2,4,5])
+
+
+##iteration with conditional logic
+values = [2, 6, 7, 8, 9, 12, 12, 15]
+other_values = [4, 56, 78, 12, 5, 67]
+def odds_sum(numbers):
+  total = 0
+  for number in numbers:
+    if number % 2 == 1:
+      total += number
+  return(total)
+  
+  
+print(odds_sum(values))
+print(odds_sum(other_values))
+
