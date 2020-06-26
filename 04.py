@@ -90,3 +90,54 @@ def odds_sum(numbers):
 print(odds_sum(values))
 print(odds_sum(other_values))
 
+##iterate over a list in reverse
+bluey_family = ["mom", "dad", "bingo", "bluey"]
+for character in bluey_family[::-1]:
+  print(f"{character} has a total of {len(character)} characters.")
+
+print(bluey_family)
+print(bluey_family[::-1])
+print(reversed(bluey_family))
+print(type(reversed(bluey_family)))
+# alternative way
+for character in reversed(bluey_family):
+  print(f"{character} has a total of {len(character)} characters.")
+
+
+##
+errands = ["gym", "lunch", "sleep", "jog"]
+print(enumerate(errands))
+
+for index, task in enumerate(errands):
+  print(f"{task} is number {index + 1} on my list of things to do!")
+
+## range function, returns a range object
+range(5)
+
+for number in range(11):
+  print(number) #0-4
+for number in range(-5, 11):
+  print(number) #0-4
+for number in range(-5, 100, 15):
+  print(number) #0-4
+
+#break keyword
+
+print(3 in [0,1,2,3,4,5])
+
+def contains(values, target):
+  found = False
+  for value in values:
+    print(value)
+    if value == target:
+      found = True
+      break
+  return found
+
+print(contains([0,1,2,3,4,5], 2))
+print(contains(bluey_family, "dad"))
+
+#continue keyword
+
+
+      
