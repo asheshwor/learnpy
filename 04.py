@@ -139,5 +139,22 @@ print(contains(bluey_family, "dad"))
 
 #continue keyword
 
+def sum_of_positives(values):
+  total = 0
+  for value in values:
+    if value > 0:
+      total += value
+  return total
+  
+print(sum_of_positives([1, 2, 3, -25, 1]))
 
-      
+def sum_of_positives(values):
+  total = 0
+  for value in values:
+    if value <= 0:
+      continue
+    total += value
+  return total
+  
+print(sum_of_positives([1, 2, 3, -25, 1]))
+
