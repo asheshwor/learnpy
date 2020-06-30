@@ -158,3 +158,25 @@ def sum_of_positives(values):
   
 print(sum_of_positives([1, 2, 3, -25, 1]))
 
+##
+def sum_from(start, end):
+  total = 0
+  for number in range(start, end + 1):
+    total += number
+    
+  return total
+
+sum_from(1, 100)
+
+##
+def same_index_values(list1, list2):
+  results = []
+  for index, value in enumerate(list1):
+    if value == list2[index]:
+      results.append(index)
+  return results
+
+same_index_values([1,2,3], [3,2,1])
+same_index_values([1,2,3,3,4,5], [3,2,1,4,4,4,4])
+
+    
