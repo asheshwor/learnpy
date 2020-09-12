@@ -20,4 +20,18 @@ movies[2:4] = ["Shooting star", "The Artist", "Simpsons the Movie", "Endearment"
 print(movies)
 movies[-3:-1] = ["The Prince", "The Fountainhead"]
 print(movies)
+movies[2] = "School of Rock"
+print(movies)
+movies[1:5] = ["Red", "War", "Everest"] #5 is exclusive
+print(movies)
 
+
+#append method
+countries = ["Canada", "Australia", "Japan", "Thailand"]
+print(countries)
+print(len(countries))
+countries.append("Vietnam")
+print(countries)
+print(len(countries))
+countries.append("Norway")
+print(len(countries))
