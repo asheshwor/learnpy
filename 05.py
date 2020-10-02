@@ -107,5 +107,26 @@ plays.insert(1, "Julius Ceasar")
 print(plays)
 plays.insert(0, "Romeo & Juliet")
 print(plays)
+plays.insert(11, "Othello") #this will insert to the end
+print(plays)
+
+#factors exercise
+def factors(number):
+  my_factors = []
+  for i in range(1, number + 1):
+    if number % i == 0:
+      my_factors.append(i)
+      
+  return my_factors
+  
+factors(1)
+factors(64)
 
 
+#the pop method
+action_stars = ["Norris", "Segal", "Van Damme", "Schwarzenegger"]
+last_action_hero = action_stars.pop()
+print(action_stars)
+print(last_action_hero)
+action_stars.pop(1)
+print(action_stars)
